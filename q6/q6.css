@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+  gap: 30px;
+  padding: 40px 0;
+}
+.top {
+  background-color: #0984e2;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 100%;
+}
+.bot {
+  background-color: #0984e2;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 0;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 40px;
+  position: relative;
+}
+ion-icon {
+  font-size: 60px;
+  color: #0984e2;
+}
+p {
+  text-align: center;
+  font-size: 13px;
+  color: #0000007a;
+}
+h3 {
+  color: rgba(0, 0, 0, 0.801);
+}
+.num {
+  position: absolute;
+  top: -30px;
+  font-size: 35px;
+  width: 60px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+  background-color: white;
+}
+
+@media all and (max-width: 965px) {
+  .cart {
+    width: 250px;
+    height: 300px;
+    font-size: 15px;
+  }
+  .num {
+    width: 50px;
+    padding: 5px;
+    top: -25px;
+  }
+  .top {
+    width: 150px;
+    height: 150px;
+  }
+  .bot {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media all and (max-width: 800px) {
+  .cart {
+    width: 200px;
+    height: 250px;
+    font-size: 15px;
+    gap: 20px;
+  }
+  ion-icon {
+    font-size: 40px;
+  }
+  .num {
+    font-size: 20px;
+    width: 35px;
+    top: -18px;
+  }
+}
+@media all and (max-width: 660px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+@media all and (max-width: 500px) {
+  .top {
+    width: 100px;
+    height: 100px;
+  }
+  .bot {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media all and (max-width: 380px) {
+  .top {
+    width: 50px;
+    height: 50px;
+  }
+  .bot {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media all and (max-height: 745px) {
+  .container {
+    /* flex-direction: column; */
+
+    gap: 15px;
+  }
+  .cart {
+    gap: 5px;
+    font-size: 11px;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+  }
+  .cart p {
+    font-size: 10px;
+  }
+}
